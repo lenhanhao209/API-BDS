@@ -1,7 +1,7 @@
 const Product = require("../models/product");
 const User = require("../models/user");
 
-const ITEMS_PER_PAGE = 12;
+// const ITEMS_PER_PAGE = 12;
 
 exports.getProduct = (req, res, next) => {
   const prodId = req.params.productId;

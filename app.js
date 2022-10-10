@@ -12,8 +12,7 @@ const multer = require("multer");
 const errorController = require("./controllers/error");
 const User = require("./models/user");
 
-const MONGODB_URI =
-  "mongodb+srv://lenhanhao209:ngocdung209@atlascluster.1pkaa.mongodb.net/API?retryWrites=true&w=majority";
+const MONGODB_URI = "mongodb+srv://lenhanhao209:ngocdung209@atlascluster.1pkaa.mongodb.net/API?retryWrites=true&w=majority";
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -106,5 +105,5 @@ app.use(authRoutes);
 
 mongoose.connect(MONGODB_URI).then((result) => {
   console.log("Server is ready!!");
-  app.listen(3000);
+  app.listen(3005);
 });
